@@ -8,10 +8,7 @@ client.once('ready', () => {
 client.on('message', message => {
   // If the message is '!rip'
   if (message.content.includes("femboy")) {
-    // Create the attachment using MessageAttachment
-    const attachment = new MessageAttachment('https://i.redd.it/wvko7o6fnsv61.jpg'); //femboy kye
-    // Send the attachment in the message channel
-    message.channel.send(attachment);
+    message.channel.send(file: 'https://i.redd.it/wvko7o6fnsv61.jpg'); //femboy kye
   }
 });
 
