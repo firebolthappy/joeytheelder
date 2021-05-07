@@ -1,8 +1,9 @@
 const Discord = require("discord.js"); // imports the discord library
 const client = new Discord.Client(); // creates a discord client
 
-client.on("ready", () => { // prints "Ready!" to the console once the bot is online
-	console.log("Ready!");
+client.once('ready', () => {
+	console.log('Ready!');
+	client.user.setPresence({ game: { name: "Joe's House" }})
 });
 
-client.login(config.BOT_TOKEN); // starts the bot up
+client.login(BOT_TOKEN);
