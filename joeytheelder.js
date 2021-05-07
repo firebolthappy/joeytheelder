@@ -6,10 +6,5 @@ client.once('ready', () => {
 	client.user.setPresence({ game: { name: "Joe's House" }})
 });
 
-client.on('message', message => {
-	if (message.content === ("time for tea")) {
-	message.channel.send("TEA");
-}
-});
 
 client.login(BOT_TOKEN);
