@@ -1,0 +1,14 @@
+{
+
+  "name": "Joey The Elder",
+  "description": "Elderly Joey",
+  "version": "1.0.0",
+  "main": "joeytheelder.js",
+  "scripts": {
+    "start": "node joeytheelder.js"
+  },
+  "dependencies": {
+    "discord.js": "11.1.0",
+    "request": "2.81.0"
+  }
+}
