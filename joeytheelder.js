@@ -8,7 +8,7 @@ client.once('ready', () => {
 client.on('message', message => {
   // If the message is '!rip'
   if (message.content.includes("femboy")) {
-    message.channel.send(file: 'https://i.redd.it/wvko7o6fnsv61.jpg'); //femboy kye
+    message.channel.send({file: 'https://i.redd.it/wvko7o6fnsv61.jpg'}); //femboy kye
   }
 });
 
