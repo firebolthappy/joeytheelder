@@ -6,4 +6,4 @@ client.once('ready', () => {
 	client.user.setPresence({ game: { name: "Joe's House" }})
 });
 
-client.login(BOT_TOKEN);
+client.login('ODQwMzIzODQ0NDkyNDkyODMy.YJWikA.fhXJPiHMEwKBQ1rvv-p4hpa-sZI');
