@@ -11,22 +11,28 @@ client.once('ready', () => {
 
 client.on('message', message => {
   // If the message is '!rip'
-	if ((message.content.includes("hello")) && !(message.author.bot)) {
-		var num = getRandomInt(0, 6);
+	if (((message.content.lowercase.includes("hello")) || (message.content.lowercase.includes("hey")) || (message.content.lowercase.includes("howdy")) || (message.content.lowercase.includes("how's it going")) || (message.content.lowercase.includes("what's up")) || (message.content.lowercase.includes("wassup")) || (message.content.lowercase.includes("hi"))) && !(message.author.bot)) { //HELLO
+		var num = getRandomInt(0, 7);
 		if (num === 0) {
-			message.channel.send("Hey!");
+			message.channel.send("Hey");
 		} else if (num === 1) {
-			message.channel.send("Hello!");
+			message.channel.send("Hello Sir");
 		} else if (num === 2) {
-			message.channel.send("Hey, How's it going");
+			message.channel.send("Hey wazzup");
 		} else if (num === 3) {
 			message.channel.send("Hello there");
 		} else if (num === 4) {
 			message.channel.send("Howdy there");
+		} else if (num === 5){
+			message.channel.send("сука блять");
+		} else if (num === 6){
+			message.channel.send("Hello there!");
+		} else if (num === 7){
+			message.channel.send("Hola there sir");
 		} else {
 			message.channel.send("Aloha there buckaroo");
 		}
-	} //end of hello
+	}
 
 });
 
