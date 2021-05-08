@@ -9,10 +9,23 @@ client.once('ready', () => {
 
 client.on('message', message => {
   // If the message is '!rip'
+	if ((msgin("hello")) && (message.author.bot)) {
+		var number = getRandomInt(6)
+		if number = 0 {
+			msgsnd("Hey!");
+		} else if number = 1 {
+			msgsnd("Hello!");
+		} else if number = 2 {
+			msgsnd("Hey, How's it going");
+		} else if number = 3 {
+			msgnd("Hello there");
+		} else if number = 4 {
+			msgnd("Howdy there");
+		} else if number = 5 {
+			msgnd("Aloha there buckaroo")
+		}
+	} //end of hello
 
-  if (msgin("femboy")) {
-    msgsnd({file: 'https://i.redd.it/wvko7o6fnsv61.jpg'}); //femboy kye
-  }
 });
 
 //https://i.redd.it/wvko7o6fnsv61.jpg
