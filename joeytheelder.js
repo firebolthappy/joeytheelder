@@ -1,7 +1,5 @@
 const Discord = require("discord.js"); // imports the discord library
 const client = new Discord.Client(); // creates a discord client
-let msgin = message.content.includes
-let msgsnd = message.channel.send
 var num = 0;
 
 client.once('ready', () => {
@@ -10,20 +8,20 @@ client.once('ready', () => {
 
 client.on('message', message => {
   // If the message is '!rip'
-	if ((msgin("hello")) && (message.author.bot)) {
+	if ((message.content.includes("hello")) && (message.author.bot)) {
 		num = genRandomInt(6);
 		if (num === 0) {
-			msgsnd("Hey!");
+			message.content.send("Hey!");
 		} else if (num === 1) {
-			msgsnd("Hello!");
+			message.content.send("Hello!");
 		} else if (num === 2) {
-			msgsnd("Hey, How's it going");
+			message.content.send("Hey, How's it going");
 		} else if (num === 3) {
-			msgnd("Hello there");
+			message.content.send("Hello there");
 		} else if (num === 4) {
-			msgnd("Howdy there");
+			message.content.send("Howdy there");
 		} else {
-			msgnd("Aloha there buckaroo");
+			message.content.send("Aloha there buckaroo");
 		}
 	} //end of hello
 
