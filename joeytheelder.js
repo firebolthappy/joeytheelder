@@ -1,6 +1,10 @@
 const Discord = require("discord.js"); // imports the discord library
 const client = new Discord.Client(); // creates a discord client
 
+function getRandomInt(min, max) {
+    return min + Math.floor(Math.random() * (max - min + 1));
+}
+
 client.once('ready', () => {
 	console.log('Ready!');
 });
@@ -8,7 +12,7 @@ client.once('ready', () => {
 client.on('message', message => {
   // If the message is '!rip'
 	if ((message.content.includes("hello")) && !(message.author.bot)) {
-		var num = getRandomInt(6);
+		var num = getRandomInt(0, 6);
 		if (num === 0) {
 			message.content.send("Hey!");
 		} else if (num === 1) {
