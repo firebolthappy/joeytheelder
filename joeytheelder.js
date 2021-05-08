@@ -11,7 +11,7 @@ client.on('message', message => {
   // If the message is '!rip'
 	if ((msgin("hello")) && (message.author.bot)) {
 		var number = getRandomInt(6)
-		if number = 0 {
+		if number === 0 {
 			msgsnd("Hey!");
 		} else if number = 1 {
 			msgsnd("Hello!");
