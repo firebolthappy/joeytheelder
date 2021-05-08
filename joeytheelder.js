@@ -12,7 +12,7 @@ client.on('message', message => {
   // If the message is '!rip'
 	if ((msgin("hello")) && (message.author.bot)) {
 		num = genRandomInt(6);
-		if num === 0 {
+		if (num === 0) {
 			msgsnd("Hey!");
 		} else if num = 1 {
 			msgsnd("Hello!");
