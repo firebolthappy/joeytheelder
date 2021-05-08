@@ -14,17 +14,17 @@ client.on('message', message => {
 	if ((message.content.includes("hello")) && !(message.author.bot)) {
 		var num = getRandomInt(0, 6);
 		if (num === 0) {
-			message.content.send("Hey!");
+			message.channel.send("Hey!");
 		} else if (num === 1) {
-			message.content.send("Hello!");
+			message.channel.send("Hello!");
 		} else if (num === 2) {
-			message.content.send("Hey, How's it going");
+			message.channel.send("Hey, How's it going");
 		} else if (num === 3) {
-			message.content.send("Hello there");
+			message.channel.send("Hello there");
 		} else if (num === 4) {
-			message.content.send("Howdy there");
+			message.channel.send("Howdy there");
 		} else {
-			message.content.send("Aloha there buckaroo");
+			message.channel.send("Aloha there buckaroo");
 		}
 	} //end of hello
 
