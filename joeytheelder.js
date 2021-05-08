@@ -2,7 +2,7 @@ const Discord = require("discord.js"); // imports the discord library
 const client = new Discord.Client(); // creates a discord client
 let msgin = message.content.includes
 let msgsnd = message.channel.send
-var number = getRandomInt(6)
+var number = getRandomInt(6);
 
 client.once('ready', () => {
 	console.log('Ready!');
