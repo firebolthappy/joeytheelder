@@ -8,7 +8,7 @@ client.once('ready', () => {
 
 client.on('message', message => {
   // If the message is '!rip'
-	if ((message.content.includes("hello")) && (message.author.bot)) {
+	if ((message.content.includes("hello")) && !(message.author.bot)) {
 		num = genRandomInt(6);
 		if (num === 0) {
 			message.content.send("Hey!");
