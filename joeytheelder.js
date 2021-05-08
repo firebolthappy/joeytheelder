@@ -14,15 +14,15 @@ client.on('message', message => {
 		num = genRandomInt(6);
 		if (num === 0) {
 			msgsnd("Hey!");
-		} else if num = 1 {
+		} else if (num === 1) {
 			msgsnd("Hello!");
-		} else if num = 2 {
+		} else if (num === 2) {
 			msgsnd("Hey, How's it going");
-		} else if num = 3 {
+		} else if (num === 3) {
 			msgnd("Hello there");
-		} else if num = 4 {
+		} else if (num === 4) {
 			msgnd("Howdy there");
-		} else if num = 5 {
+		} else {
 			msgnd("Aloha there buckaroo");
 		}
 	} //end of hello
