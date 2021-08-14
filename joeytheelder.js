@@ -75,12 +75,12 @@ client.on('message', message => {
 	}
   */
 
-if (message.content.lowercase.includes("joey")) {
+if (message.content.lowercase == "joey") {
   message.channel.send("coolatta");
 }
 
 
-})
+});
 
 //https://i.redd.it/wvko7o6fnsv61.jpg
 client.login(process.env.BOT_TOKEN);
