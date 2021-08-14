@@ -9,8 +9,9 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-client.on('interactionCreate', message => {
+client.on('message', message => {
   // If the message is '!rip'
+  /*
 	if (((message.content.lowercase.includes("hello")) || (message.content.lowercase.includes("hey")) || (message.content.lowercase.includes("howdy")) || (message.content.lowercase.includes("how's it going")) || (message.content.lowercase.includes("what's up")) || (message.content.lowercase.includes("wassup")) || (message.content.lowercase.includes("hi"))) && !(message.author.bot)) { //HELLO
 		var num = getRandomInt(0, 8);
 		if (num === 0) {
@@ -72,6 +73,12 @@ client.on('interactionCreate', message => {
       message.channel.send("joe biden joe biden joe biden joe biden joe biden joe biden joe biden joe biden joe biden joe biden joe biden joe biden joe biden joe biden joe biden")
     }
 	}
+  */
+
+if (message.content.lowercase.includes("joey")) {
+  message.channel.send("coolatta");
+}
+
 
 });
 
