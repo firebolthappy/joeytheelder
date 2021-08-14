@@ -32,7 +32,7 @@ client.on('message', message => {
 		} else {
 			message.channel.send("Aloha there buckaroo");
 		}
-	} else /*if (message.content.lowercase.includes("joey"))*/{
+	} else if (message.content.lowercase.includes("joey")){
 		var num = getRandomInt(0, 17);
 		if (num === 0) {
 			message.channel.send("Does life have a purpose?");
