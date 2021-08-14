@@ -80,7 +80,7 @@ if (message.content.lowercase.includes("joey")) {
 }
 
 
-});
+})
 
 //https://i.redd.it/wvko7o6fnsv61.jpg
 client.login(process.env.BOT_TOKEN);
