@@ -9,7 +9,7 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-client.on('message', message => {
+client.on('interactionCreate', message => {
   // If the message is '!rip'
 	if (((message.content.lowercase.includes("hello")) || (message.content.lowercase.includes("hey")) || (message.content.lowercase.includes("howdy")) || (message.content.lowercase.includes("how's it going")) || (message.content.lowercase.includes("what's up")) || (message.content.lowercase.includes("wassup")) || (message.content.lowercase.includes("hi"))) && !(message.author.bot)) { //HELLO
 		var num = getRandomInt(0, 8);
