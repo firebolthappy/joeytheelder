@@ -32,8 +32,8 @@ client.on('message', message => {
 		} else {
 			message.channel.send("Aloha there buckaroo");
 		}
-	} else if (message.content.lowercase.includes("joey")){
-		var num = getRandomInt(0, 14);
+	} else /*if (message.content.lowercase.includes("joey"))*/{
+		var num = getRandomInt(0, 17);
 		if (num === 0) {
 			message.channel.send("Does life have a purpose?");
 		} else if (num === 1) {
@@ -64,7 +64,13 @@ client.on('message', message => {
 			message.channel.send("are you ok?")
 		} else if (num === 14) {
 			message.channel.send("My name is joey but do I have a purpose?")
-		}
+		} else if (num == 15) {
+      message.channel.send("сука блять")
+    } else if (num == 16) {
+      message.channel.send("ur mom")
+    } else if (num == 17) {
+      message.channel.send("joe biden joe biden joe biden joe biden joe biden joe biden joe biden joe biden joe biden joe biden joe biden joe biden joe biden joe biden joe biden")
+    }
 	}
 
 });
