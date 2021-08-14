@@ -7,6 +7,7 @@ function getRandomInt(min, max) {
 
 client.once('ready', () => {
 	console.log('Ready!');
+  client.user.setActivity('ur mom');
 });
 
 client.on('message', message => {
